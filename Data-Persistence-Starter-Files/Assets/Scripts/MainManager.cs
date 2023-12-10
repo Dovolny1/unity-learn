@@ -32,20 +32,16 @@ public class MainManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "menu")
-        {
-            
+        //SaveData data = new SaveData();
+        //data.score = 0;
+        //data.name = "";
 
-            
-        }
+        //string json = JsonUtility.ToJson(data);
 
+        //File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
 
-        if (SceneManager.GetActiveScene().name == "main")
-        {
-            
-        }
+        //Debug.Log("Score reset");
 
-        
     }
 
     private void Update()
@@ -138,6 +134,7 @@ public class MainManager : MonoBehaviour
                     m_GameOver = false;
                     LevelLoaded = false;
                     m_Started = false;
+                    m_Points = 0;
                 }
             }
             
